@@ -1,0 +1,8 @@
+streamlit
+transformers
+altair
+pandas
+sacremoses
+sentencepiece
+torch
+streamlit_chat
