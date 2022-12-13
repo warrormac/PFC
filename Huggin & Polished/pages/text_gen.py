@@ -15,7 +15,7 @@ def app():
     def get_model(model):
         return pipeline(task = 'translation', model = model)
     
-    #dataset = load_dataset("huggingface.co/datasets/warrormac/autotrain-data-my-train", use_auth_token=True)
+    dataset = load_dataset("huggingface.co/datasets/warrormac/autotrain-data-my-train", use_auth_token=True)
     col1, col2 = st.columns([2,1])
 
         
