@@ -4,7 +4,8 @@ from transformers import T5Tokenizer, T5Model, T5Config
 
 # Load the tokenizer and model
 tokenizer = T5Tokenizer.from_pretrained('t5-base')
-model = T5Model.from_pretrained('t5-base')
+config = T5Config.from_pretrained('t5-base')
+model = T5Model(config)
 
 # Load the source and target texts
 source_texts = ['Phaxsi', 'Jach\'a', 'Mallku', 'Jiska']
@@ -22,13 +23,6 @@ target_ids = tokenized_targets['input_ids']
 # Pad the target sequence to match the length of the input sequence
 target_ids = target_ids[:, :input_ids.shape[1]]
 
-# Configure the T5 model
-config = T5Config.from_pretrained('t5-base')
-config.num_layers = 6
-config.hidden_size = 768  # Set the desired hidden size
-config.attention_heads = 8
-model = T5Model(config)
-
 # Use the encoded inputs and targets with the configured T5 model
 outputs = model(
     input_ids=input_ids,
@@ -37,31 +31,22 @@ outputs = model(
 )
 
 # Save the encoded input tensor
-encoded_inputs = {'last_hidden_state': outputs.last_hidden_state}
-with open('encoded_inputs.pkl', 'wb') as file:
-    pickle.dump(encoded_inputs, file)
+encoded_inputs = outputs.last_hidden_state
+torch.save(encoded_inputs, 'encoded_inputs.pt')
 
 # Save the encoded target tensor
-encoded_targets = {'last_hidden_state': outputs.last_hidden_state}
-with open('encoded_targets.pkl', 'wb') as file:
-    pickle.dump(encoded_targets, file)
+encoded_targets = outputs.last_hidden_state
+torch.save(encoded_targets, 'encoded_targets.pt')
 
 # Print the outputs
 print(outputs)
 
-# Access specific elements from the outputs
-last_hidden_state = outputs.last_hidden_state
-
 # Load the encoded input tensor
-with open('encoded_inputs.pkl', 'rb') as file:
-    encoded_inputs = pickle.load(file)
-    input_tensor = encoded_inputs['last_hidden_state']
+encoded_inputs = torch.load('encoded_inputs.pt')
 
 # Load the encoded target tensor
-with open('encoded_targets.pkl', 'rb') as file:
-    encoded_targets = pickle.load(file)
-    target_tensor = encoded_targets['last_hidden_state']
+encoded_targets = torch.load('encoded_targets.pt')
 
 # Print the shape of the input and target tensors
-print("Input tensor shape:", input_tensor.shape)
-print("Target tensor shape:", target_tensor.shape)
+print("Input tensor shape:", encoded_inputs.shape)
+print("Target tensor shape:", encoded_targets.shape)
