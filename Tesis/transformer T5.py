@@ -1,87 +1,85 @@
 import torch
+import torch.nn as nn
 from torch.utils.data import DataLoader, Dataset
-from transformers import T5Tokenizer, T5ForConditionalGeneration, T5Config, AdamW
 
-# Define the dataset class
-class TranslationDataset(Dataset):
-    def __init__(self, source_texts, target_texts, tokenizer):
-        self.source_texts = source_texts
-        self.target_texts = target_texts
-        self.tokenizer = tokenizer
+# Define your custom dataset
+class CustomDataset(Dataset):
+    def __init__(self, encoded_inputs_file, encoded_targets_file):
+        self.encoded_inputs = torch.load(encoded_inputs_file)
+        self.encoded_targets = torch.load(encoded_targets_file)
 
     def __len__(self):
-        return len(self.source_texts)
+        return len(self.encoded_inputs)
 
     def __getitem__(self, index):
-        source_text = self.source_texts[index]
-        target_text = self.target_texts[index]
-        encoded_inputs = self.tokenizer(source_text, padding='max_length', truncation=True, max_length=512, return_tensors='pt')
-        encoded_targets = self.tokenizer(target_text, padding='max_length', truncation=True, max_length=512, return_tensors='pt')
-        return {
-            'input_ids': encoded_inputs.input_ids.squeeze(),
-            'attention_mask': encoded_inputs.attention_mask.squeeze(),
-            'decoder_input_ids': encoded_targets.input_ids.squeeze(),
-            'decoder_attention_mask': encoded_targets.attention_mask.squeeze(),
-        }
+        input_data = self.encoded_inputs[index]
+        target_data = self.encoded_targets[index]
+        return input_data, target_data
 
-# Load the tokenizer
-tokenizer = T5Tokenizer.from_pretrained('t5-base')
+# Define your custom transformer model
+class CustomTransformer(nn.Module):
+    def __init__(self, input_dim, target_dim, hidden_dim, num_layers):
+        super(CustomTransformer, self).__init__()
 
-# Load the training data
-source_texts = ['Phaxsi', 'Jach\'a', 'Mallku', 'Jiska']
-target_texts = ['Sun', 'Big', 'Condor', 'Moon']
+        self.encoder = nn.TransformerEncoderLayer(input_dim, nhead=8, dim_feedforward=hidden_dim)
+        self.decoder = nn.TransformerDecoderLayer(target_dim, nhead=8, dim_feedforward=hidden_dim)
+        self.transformer = nn.TransformerEncoder(self.encoder, num_layers=num_layers)
 
-# Create the dataset and data loader
-dataset = TranslationDataset(source_texts, target_texts, tokenizer)
-dataloader = DataLoader(dataset, batch_size=2, shuffle=True)
+    def forward(self, inputs, targets):
+        encoded_inputs = self.transformer(inputs)
+        decoded_outputs = self.decoder(targets, encoded_inputs)
+        return decoded_outputs
 
-# Configure the T5 model
-config = T5Config.from_pretrained('t5-base')
-config.num_layers = 6
-config.hidden_size = 768  # Set the desired hidden size
-config.attention_heads = 8
+# Define hyperparameters
+input_dim = 768  # Specify the input dimension based on the shape of your encoded inputs
+target_dim = 768  # Specify the target dimension based on the shape of your encoded targets
+hidden_dim = 512
+num_layers = 4
+batch_size = 32
+num_epochs = 10
+learning_rate = 0.001
 
-# Instantiate the T5 model for conditional generation
-model = T5ForConditionalGeneration(config)
+# Check if GPU is available
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+if device.type == 'cuda':
+    print('GPU is available!')
+else:
+    print('Using CPU for training.')
 
-# Define the optimizer
-optimizer = AdamW(model.parameters(), lr=1e-4)
+# Create dataloader for training
+dataset = CustomDataset('C:/Users/Andre/OneDrive/UCSP/Semestre 7 Online/Proyectos/Tesis/encoded_inputs.pt', 'C:/Users/Andre/OneDrive/UCSP/Semestre 7 Online/Proyectos/Tesis/encoded_targets.pt')
+dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
+
+# Create the model and optimizer
+model = CustomTransformer(input_dim, target_dim, hidden_dim, num_layers)
+model.to(device)  # Move the model to GPU if available
+optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+criterion = nn.MSELoss()
 
 # Training loop
-num_epochs = 10
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-model.to(device)
-
 for epoch in range(num_epochs):
-    model.train()
     total_loss = 0
+    for inputs, targets in dataloader:
+        inputs = inputs.to(device)  # Move inputs to GPU if available
+        targets = targets.to(device)  # Move targets to GPU if available
 
-    for batch in dataloader:
-        input_ids = batch['input_ids'].to(device)
-        attention_mask = batch['attention_mask'].to(device)
-        decoder_input_ids = batch['decoder_input_ids'].to(device)
-        decoder_attention_mask = batch['decoder_attention_mask'].to(device)
-
-        # Forward pass
-        outputs = model(
-            input_ids=input_ids,
-            attention_mask=attention_mask,
-            decoder_input_ids=decoder_input_ids,
-            decoder_attention_mask=decoder_attention_mask,
-            labels=decoder_input_ids
-        )
-
-        loss = outputs.loss
-        total_loss += loss.item()
-
-        # Backward pass and optimization
         optimizer.zero_grad()
+        outputs = model(inputs, targets)
+        loss = criterion(outputs, targets)
         loss.backward()
         optimizer.step()
-
-    average_loss = total_loss / len(dataloader)
-    print(f'Epoch {epoch+1}/{num_epochs}, Loss: {average_loss}')
+        total_loss += loss.item()
+    avg_loss = total_loss / len(dataloader)
+    print(f"Epoch {epoch+1}/{num_epochs}, Loss: {avg_loss:.4f}")
 
 # Save the trained model
-model.save_pretrained('trained_model')
-tokenizer.save_pretrained('trained_model')
+torch.save(model.state_dict(), 'trained_model.pt')
+
+
+
+print(torch.cuda.is_available())
+print(torch.cuda.device_count())
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+model.to(device)
+inputs = inputs.to(device)
+targets = targets.to(device)
