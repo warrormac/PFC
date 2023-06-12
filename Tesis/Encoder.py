@@ -71,20 +71,15 @@ target_attention_mask = target_attention_mask[:, :input_ids.shape[1]]
 encoded_targets = model.decoder(input_ids=target_ids, attention_mask=target_attention_mask)
 
 # Save the encoded input tensor
-with open('encoded_inputs.pkl', 'wb') as file:
-    pickle.dump(encoded_inputs, file)
+torch.save(encoded_inputs, 'encoded_inputs.pt')
 
 # Save the encoded target tensor
-with open('encoded_targets.pkl', 'wb') as file:
-    pickle.dump(encoded_targets, file)
+torch.save(encoded_targets, 'encoded_targets.pt')
 
 # Print the encoded tensors
 print(encoded_inputs)
 print(encoded_targets)
 
 
-with open('C:/Users/Andre/OneDrive/UCSP/Semestre 7 Online/Proyectos/Tesis/encoded_inputs.pkl', 'rb') as f:
-    encoded_input = pickle.load(f)
-    
+encoded_input = torch.load('encoded_inputs.pt')
 print(encoded_input.keys())
-
