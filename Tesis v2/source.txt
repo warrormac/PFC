@@ -1,0 +1,1368 @@
+aymara
+Phaxsi
+Jach'a
+Mallku
+Jiska
+Pacha
+Illimani
+Llaki
+Q'illu
+Pirwa
+Inti
+Nina
+Suma
+Ch'allay
+Puma
+Sara
+Munay
+Q'ara
+Apu
+Titi
+Ch'ama
+Kuti
+Qhapaq
+Kawsay
+Pachamama
+Wasi
+Salla
+Jani
+Qhucha
+K'ara
+Kuska
+Mama
+Papa
+Wara
+Uma
+Suyu
+Waka
+Mita
+Llaqta
+T'ika
+Wasiqi
+Uña
+Q'asa
+Kuntur
+Sullka
+Lluq'i
+Mara
+Quta
+Punku
+Qullqi
+Ch'uspa
+Sikuris
+Chaska
+Ñawi
+Simi
+Qhapaq Ñan
+Pantalla
+Thaki
+Chuki
+Wira
+Kunti
+Waqay
+Wak'a
+K'ara
+Wamp'u
+K'intu
+Puri
+Pusku
+Juk'i
+Muru
+Tawa
+P'unchay
+Q'illu Phaxsi
+Jisk'a Phaxsi
+Misk'i
+Yawar
+Yana
+Siki
+Wich'qana
+Phururu
+Q'ara
+Wasi
+Wasi
+Q'arwa
+K'uychi
+Willa
+Kachi
+Pisqa
+Q'omer
+Muña
+Tunka
+Ch'allay
+Kusillo
+Llank'ay
+Supay
+Mamaq
+Tataq
+Kusiku
+Wayna
+Wit'i
+Qallu
+Nayra
+Iskay
+Qantu
+P'itita
+Qala
+Ch'aki
+T'ika
+K'asa
+T'ika
+Wila
+Wayra
+Jilakata
+Llach'i
+Masi
+Tuta
+Ñawi
+Usnu
+T'ika
+Llank'ay
+Wara
+Mallku
+Waka
+Q'illu
+Tawa
+Sara
+Uma
+Sullka
+Pantalla
+Jisk'a Phaxsi
+Thaki
+Wasi
+Puri
+Jani
+Mama
+Quta
+Kawsay
+Siki
+Llaqta
+Kusi
+Wasi
+Mamaq
+Suma
+Jach'a
+Inti
+Qhapaq
+Sara
+Phaxsi
+Illimani
+Pacha
+Qullqi
+Puma
+Simi
+Nina
+Qhapaq Ñan
+Wira
+Salla
+Pachamama
+Wamp'u
+Llaki
+Q'ara
+T'ika
+Kusi
+Sara
+Qhapaq
+Sullka
+Jach'a
+K'ara
+Kusi
+Mallku
+Q'illu
+T'ika
+Inti
+Suma
+Pacha
+Wasi
+Wara
+Puma
+Mama
+Papa
+Nina
+Ch'ama
+Kusi
+Simi
+P'unchay
+Phururu
+Ñawi
+Qhapaq Ñan
+Wamp'u
+Pachamama
+Salla
+Llaki
+Llaqta
+Wira
+Kuska
+Kusi
+Siki
+Uña
+Q'asa
+Wasi
+Phaxsi
+Illimani
+Mallku
+Jach'a
+Jiska
+Pacha
+Sara
+Munay
+Q'ara
+Apu
+Titi
+Ch'ama
+Kuti
+Qhapaq
+Kawsay
+Pachamama
+Wasi
+Salla
+Jani
+Qhucha
+K'ara
+Kuska
+Mama
+Papa
+Wara
+Uma
+Suyu
+Waka
+Mita
+Llaqta
+T'ika
+Wasiqi
+Uña
+Q'asa
+Kuntur
+Sullka
+Lluq'i
+Mara
+Quta
+Punku
+Qullqi
+Ch'uspa
+Sikuris
+Chaska
+Ñawi
+Simi
+Qhapaq Ñan
+Pantalla
+Thaki
+Chuki
+Wira
+Kunti
+Waqay
+Wak'a
+K'ara
+Wamp'u
+K'intu
+Puri
+Pusku
+Juk'i
+Muru
+Tawa
+P'unchay
+Q'illu Phaxsi
+Jisk'a Phaxsi
+Misk'i
+Yawar
+Yana
+Siki
+Wich'qana
+Phururu
+Q'ara
+Wasi
+Wasi
+Q'arwa
+K'uychi
+Willa
+Kachi
+Pisqa
+Q'omer
+Muña
+Tunka
+Ch'allay
+Kusillo
+Llank'ay
+Supay
+Mamaq
+Tataq
+Kusiku
+Wayna
+Wit'i
+Qallu
+Nayra
+Iskay
+Qantu
+P'itita
+Qala
+Ch'aki
+T'ika
+K'asa
+T'ika
+Wila
+Wayra
+Jilakata
+Llach'i
+Masi
+Tuta
+Ñawi
+Usnu
+T'ika
+Llank'ay
+Wara
+Mallku
+Waka
+Q'illu
+Tawa
+Sara
+Uma
+Sullka
+Pantalla
+Jisk'a Phaxsi
+Thaki
+Wasi
+Puri
+Jani
+Mama
+Quta
+Kawsay
+Siki
+Llaqta
+Kusi
+Wasi
+Mamaq
+Suma
+Jach'a
+Inti
+Qhapaq
+Sara
+Phaxsi
+Illimani
+Pacha
+Qullqi
+Puma
+Simi
+Nina
+Qhapaq Ñan
+Wira
+Salla
+Pachamama
+Wamp'u
+Llaki
+Q'ara
+T'ika
+Kusi
+Sara
+Qhapaq
+Sullka
+Jach'a
+K'ara
+Kusi
+Mallku
+Q'illu
+T'ika
+Inti
+Suma
+Pacha
+Wasi
+Wara
+Puma
+Mama
+Papa
+Nina
+Ch'ama
+Kusi
+Simi
+P'unchay
+Phururu
+Ñawi
+Qhapaq Ñan
+Wamp'u
+Pachamama
+Salla
+Llaki
+Llaqta
+Wira
+Kuska
+Kusi
+Siki
+Uña
+Q'asa
+Wasi
+Phaxsi
+Illimani
+Mallku
+Jach'a
+Jiska
+Pacha
+Sara
+Munay
+Q'ara
+Apu
+Titi
+Ch'ama
+Kuti
+Qhapaq
+Kawsay
+Pachamama
+Wasi
+Salla
+Jani
+Qhucha
+K'ara
+Kuska
+Mama
+Papa
+Wara
+Uma
+Suyu
+Waka
+Mita
+Llaqta
+T'ika
+Wasiqi
+Uña
+Q'asa
+Kuntur
+Sullka
+Lluq'i
+Mara
+Quta
+Punku
+Qullqi
+Ch'uspa
+Sikuris
+Chaska
+Ñawi
+Simi
+Qhapaq Ñan
+Pantalla
+Thaki
+Ch'aki
+T'ika
+K'asa
+T'ika
+Wila
+Wayra
+Jilakata
+Llach'i
+Masi
+Tuta
+Ñawi
+Usnu
+T'ika
+Llank'ay
+Wara
+Mallku
+Waka
+Wayra
+Jilakata
+Llach'i
+Masi
+Tuta
+Ñawi
+Usnu
+T'ika
+Llank'ay
+Wara
+Mallku
+Waka
+Q'illu
+Tawa
+Sara
+Uma
+Sullka
+Pantalla
+Jisk'a Phaxsi
+Thaki
+Wasi
+Puri
+Jani
+Mama
+Quta
+Kawsay
+Siki
+Llaqta
+Kusi
+Wasi
+Mamaq
+Suma
+Jach'a
+Inti
+Qhapaq
+Sara
+Phaxsi
+Illimani
+Pacha
+Qullqi
+Puma
+Simi
+Nina
+Qhapaq Ñan
+Wira
+Salla
+Pachamama
+Wamp'u
+Llaki
+Q'ara
+T'ika
+Kusi
+Sara
+Qhapaq
+Sullka
+Jach'a
+K'ara
+Kusi
+Mallku
+Q'illu
+T'ika
+Inti
+Suma
+Pacha
+Wasi
+Wara
+Puma
+Mama
+Papa
+Nina
+Ch'ama
+Kusi
+Simi
+P'unchay
+Phururu
+Ñawi
+Qhapaq Ñan
+Wamp'u
+Pachamama
+Salla
+Llaki
+Llaqta
+Wira
+Kuska
+Kusi
+Siki
+Uña
+Q'asa
+Wasi
+Phaxsi
+Illimani
+Mallku
+Jach'a
+Jiska
+Pacha
+Sara
+Munay
+Q'ara
+Apu
+Titi
+Ch'ama
+Kuti
+Qhapaq
+Kawsay
+Pachamama
+Wasi
+Salla
+Jani
+Qhucha
+K'ara
+Kuska
+Mama
+Papa
+Wara
+Uma
+Suyu
+Waka
+Mita
+Llaqta
+T'ika
+Wasiqi
+Uña
+Q'asa
+Kuntur
+Sullka
+Lluq'i
+Mara
+Quta
+Punku
+Qullqi
+Ch'uspa
+Sikuris
+Chaska
+Ñawi
+Simi
+Qhapaq Ñan
+Pantalla
+Thaki
+Ch'aki
+T'ika
+K'asa
+T'ika
+Wila
+Wayra
+Jilakata
+Llach'i
+Masi
+Tuta
+Ñawi
+Usnu
+T'ika
+Llank'ay
+Wara
+Mallku
+Waka
+Q'illu
+Tawa
+Sara
+Uma
+Sullka
+Pantalla
+Jisk'a Phaxsi
+Thaki
+Wasi
+Puri
+Jani
+Mama
+Quta
+Kawsay
+Siki
+Llaqta
+Kusi
+Wasi
+Mamaq
+Suma
+Jach'a
+Inti
+Qhapaq
+Sara
+Phaxsi
+Illimani
+Pacha
+Qullqi
+Puma
+Simi
+Nina
+Qhapaq Ñan
+Wira
+Salla
+Pachamama
+Wamp'u
+Llaki
+Q'ara
+T'ika
+Kusi
+Sara
+Qhapaq
+Sullka
+Jach'a
+K'ara
+Kusi
+Mallku
+Q'illu
+T'ika
+Inti
+Suma
+Pacha
+Wasi
+Wara
+Puma
+Mama
+Papa
+Nina
+Ch'ama
+Kusi
+Simi
+P'unchay
+Phururu
+Ñawi
+Qhapaq Ñan
+Wamp'u
+Pachamama
+Salla
+Llaki
+Llaqta
+Wira
+Kuska
+Kusi
+Siki
+Uña
+Q'asa
+Wasi
+Phaxsi
+Illimani
+Mallku
+Jach'a
+Jiska
+Pacha
+Sara
+Munay
+Q'ara
+Apu
+Titi
+Ch'ama
+Kuti
+Qhapaq
+Kawsay
+Pachamama
+Wasi
+Salla
+Jani
+Qhucha
+K'ara
+Kuska
+Mama
+Papa
+Wara
+Uma
+Suyu
+Waka
+Mita
+Llaqta
+T'ika
+Wasiqi
+Uña
+Q'asa
+Kuntur
+Sullka
+Lluq'i
+Mara
+Quta
+Punku
+Qullqi
+Ch'uspa
+Sikuris
+Chaska
+Ñawi
+Simi
+Qhapaq Ñan
+Pantalla
+Thaki
+Ch'aki
+T'ika
+K'asa
+T'ika
+Wila
+Wayra
+Jilakata
+Llach'i
+Masi
+Tuta
+Ñawi
+Usnu
+T'ika
+Llank'ay
+Wara
+Mallku
+Waka
+Q'illu
+Tawa
+Sara
+Uma
+Sullka
+Pantalla
+Jisk'a Phaxsi
+Thaki
+Wasi
+Puri
+Jani
+Mama
+Quta
+Kawsay
+Siki
+Llaqta
+Kusi
+Wasi
+Mamaq
+Suma
+Jach'a
+Inti
+Qhapaq
+Sara
+Phaxsi
+Illimani
+Pacha
+Qullqi
+Puma
+Simi
+Nina
+Qhapaq Ñan
+Wira
+Salla
+Pachamama
+Wamp'u
+Llaki
+Q'ara
+T'ika
+Kusi
+Sara
+Qhapaq
+Sullka
+Jach'a
+K'ara
+Kusi
+Mallku
+Q'illu
+T'ika
+Inti
+Suma
+Pacha
+Wasi
+Wara
+Puma
+Mama
+Papa
+Nina
+Ch'ama
+Kusi
+Simi
+Ñawiñam munay
+T'ika jilanchay
+Mama wawqi
+Sara ñawi
+Apu Mallku
+Sara inti
+Ñuqa suti
+Phaxsi janq'a
+Q'ara phaxsi
+Ñuqa jisk'a
+Wasi phaxsi
+T'ika phusuy
+Ñawiñam jach'a
+Mama inti
+Sara wakichis
+Ñuqa wakichis
+Phaxsi wakichis
+Suma munay
+Apu Ñawi
+Ñuqa munay
+Wasi t'ikaru
+Q'ara ñawi
+Ñuqa t'ikaru
+Jach'a phusuy
+Ñawi munay
+Sara jach'a
+Phaxsi ñawi
+Ñuqa jach'a
+Wasi janq'a
+T'ika suti
+Ñawiñam wakichis
+Mama phusuy
+Sara phusuy
+Ñuqa janq'a
+Phaxsi inti
+Q'ara jisk'a
+Ñuqa phusuy
+Jach'a munay
+Ñawi ñawi
+Sara ñawi
+Phaxsi suti
+Suma janq'a
+Apu inti
+Ñuqa wakichis
+Wasi wakichis
+T'ika wakichis
+Ñawiñam phusuy
+Mama jisk'a
+Sara phusuy
+Ñuqa janq'a
+Phaxsi jach'a
+Q'ara ñawi
+Ñuqa suti
+Jach'a janq'a
+Ñawi munay
+Sara munay
+Phaxsi ñawi
+Ñuqa jach'a
+Wasi janq'a
+T'ika suti
+Ñawiñam wakichis
+Mama phusuy
+Sara phusuy
+Ñuqa janq'a
+Phaxsi inti
+Q'ara jisk'a
+Ñuqa phusuy
+Jach'a munay
+Ñawi ñawi
+Sara ñawi
+Phaxsi suti
+Suma janq'a
+Apu inti
+Ñuqa wakichis
+Wasi wakichis
+ wakichis
+Ñawiñam phusuy
+Mama jisk'a
+Sara phusuy
+Ñuqa janq'a
+Phaxsi jach'a
+Q'ara ñawi
+Ñuqa suti
+Jach'a janq'a
+Ñawi munay
+Sara munay
+Phaxsi ñawi
+Ñuqa jach'a
+Wasi janq'a
+T'ika suti
+Ñawiñam wakichis
+Mama phusuy
+Sara phusuy
+Ñuqa janq'a
+Phaxsi inti
+Q'ara jisk'a
+Ñuqa phusuy
+Jach'a munay
+Ñawi ñawi
+Sara ñawi
+Phaxsi suti
+Suma janq'a
+Apu inti
+Ñuqa wakichis
+Wasi wakichis
+T'ika wakichis
+Ñawiñam phusuy
+Mama jisk'a
+Sara phusuy
+Ñuqa janq'a
+Phaxsi jach'a
+Q'ara ñawi
+Ñuqa suti
+Jach'a janq'a
+Ñawi munay
+Sara munay
+Phaxsi ñawi
+Ñuqa jach'a
+Wasi janq'a
+T'ika suti
+Ñawiñam wakichis
+Mama phusuy
+Sara phusuy
+Ñuqa janq'a
+Phaxsi inti
+Q'ara jisk'a
+Ñuqa phusuy
+Jach'a munay
+Ñawi ñawi
+Sara ñawi
+Phaxsi suti
+Suma janq'a phusuy
+Jach'a inti munay
+Wasi phusuy wakichis
+Ñawiñam munay suti
+T'ika jilanchay phusuy
+Mama wawqi jisk'a
+Sara ñawi wakichis
+Apu Mallku jach'a
+Sara inti wakichis
+Ñuqa suti janq'a
+Phaxsi janq'a suti
+Q'ara phaxsi ñawi
+Ñuqa jisk'a phusuy
+Wasi phaxsi janq'a
+T'ika phusuy jisk'a
+Ñawiñam jach'a munay
+Mama inti wakichis
+Sara wakichis phusuy
+Ñuqa wakichis jisk'a
+Phaxsi wakichis phusuy
+Suma munay janq'a
+Apu Ñawi jisk'a
+Ñuqa munay janq'a
+Wasi t'ikaru phusuy
+Q'ara ñawi jisk'a
+Ñuqa t'ikaru janq'a
+Jach'a phusuy munay
+Ñawi munay suti
+Sara phusuy jach'a
+Phaxsi ñawi wakichis
+Ñuqa jach'a janq'a
+Wasi janq'a phusuy
+T'ika suti janq'a
+Ñawiñam wakichis phusuy
+Mama phusuy jisk'a
+Sara phusuy janq'a
+Ñuqa janq'a phusuy
+Phaxsi inti munay
+Q'ara jisk'a phusuy
+Ñuqa phusuy janq'a
+Jach'a munay suti
+Ñawi ñawi munay
+Sara ñawi munay
+Phaxsi suti janq'a
+Suma janq'a inti
+Apu inti munay
+Ñuqa wakichis janq'a
+Wasi wakichis phusuy
+T'ika wakichis janq'a
+Ñawiñam phusuy janq'a
+Mama jisk'a munay
+Sara phusuy janq'a
+Ñuqa janq'a phusuy
+Phaxsi jach'a inti
+Q'ara ñawi jisk'a
+Ñuqa phusuy janq'a
+Apu inti munay
+Ñuqa wakichis janq'a
+Wasi wakichis phusuy
+T'ika wakichis janq'a
+Ñawiñam phusuy janq'a
+Mama jisk'a munay
+Sara phusuy janq'a
+Ñuqa janq'a phusuy
+Phaxsi jach'a inti
+Q'ara ñawi jisk'a
+Ñuqa phusuy janq'a
+Jach'a munay suti
+Ñawi ñawi munay
+Sara ñawi munay
+Phaxsi suti janq'a
+Suma
+Janq'a
+Phusuy
+Jach'a
+Inti
+Munay
+Wasi
+Ñawi
+Ñawiñam
+T'ika
+Jilanchay
+Wawqi
+Jisk'a
+Wakichis
+Apu
+Mama
+Suti
+Phaxsi
+Q'ara
+Wila
+Q'illu
+Anqas
+Jisk'a
+Q'ara
+K'anchay
+Q'ispi
+Puka
+K'umiri
+Pulis
+Sutha
+K'aspi
+Uqi
+Q'ara q'ara
+Ch'aska
+Q'ispi wila
+Q'illu q'illu
+Anqas jisk'a
+Wila puka
+Q'ara anqas
+K'anchay q'illu
+Q'ispi pulis
+Sutha wila
+Jisk'a k'umiri
+Q'ara k'aspi
+Uqi q'ispi
+Ch'aska puka
+Q'ispi wila puka
+Q'illu q'illu q'illu
+Anqas jisk'a jisk'a
+Wila puka pulis
+Q'ara anqas anqas
+K'anchay q'illu q'illu
+Q'ispi pulis pulis
+Sutha wila wila
+Jisk'a k'umiri k'umiri
+Q'ara k'aspi k'aspi
+Uqi q'ispi q'ispi
+Ch'aska puka puka
+Q'oya
+P'ititi
+Wayra p'ititi
+Kantu
+Wira wira
+Ñawi wayra
+Mama ojho
+Q'ara p'ititi
+Wach'a wayra
+Panka panka
+Ñust'a q'oya
+Kusi kusi
+Ñuqa jallp'a
+Mama q'oya
+Wak'a wayra
+Mallku wira
+Ñust'a kantu
+Pacha pacha
+Jinti p'ititi
+Suma wira
+Ñawi p'ititi
+Pacha mama q'oya
+Wak'a p'ititi
+Mama panka panka
+Ñawi wira
+Kimsa kimsa
+Pacha q'oya
+Inti wira
+Ñust'a p'ititi
+Suma p'ititi
+Ñuqa jisk'a
+Q'ara wayra
+Ñawi kantu
+Ñust'a wira
+Wara wara
+Kimsa q'oya
+Inti p'ititi
+Ñust'a wayra
+Suma wira
+Ñuqa jisk'a
+Q'ara wayra
+Ñawi kantu
+Ñust'a wira
+Wara wara
+Kimsa q'oya
+Inti p'ititi
+Ñust'a wayra
+Suma wira
+Ñuqa jisk'a
+Q'ara wayra
+Ñawi kantu
+Ñust'a wira
+Wara wara
+Kimsa q'oya
+Inti p'ititi
+Ñust'a wayra
+Suma wira
+Ñuqa jisk'a
+Q'ara wayra
+Ñawi kantu
+Ñust'a wira
+Wara wara
+Kimsa q'oya
+Inti p'ititi
+Ñust'a wayra
+Suma wira
+Ñuqa jisk'a
+Q'ara wayra
+Ñawi kantu
+Ñust'a wira
+Wara wara
+Kimsa q'oya
+Inti p'ititi
+Ñust'a wayra
+Suma wira
+Ñuqa jisk'a
+Q'ara wayra
+Ñawi kantu
+Ñust'a wira
+Wara wara
+Kimsa q'oya
+Inti p'ititi
+Ñust'a wayra
+Suma wira
+Ñuqa jisk'a
+Q'ara wayra
+Ñawi kantu
+Ñust'a wira
+Wara wara
+Kimsa q'oya
+Inti p'ititi
+Ñust'a wayra
+Suma wira
+Ñuqa jisk'a
+Q'ara wayra
+Ñawi kantu
+Ñust'a wira
+Wara wara
+Kimsa q'oya
+Inti p'ititi
+Ñust'a wayra
+Suma wira
+Ch'iyawiri
+Phaxsiwiri
+Jalluq'a wakani
+Piru phuyu
+Anta wayruru
+Inti k'anchay
+Qillqa uyu
+Llamqha k'uychi
+Wara wara
+Pacha q'awa
+Ch'iyapacha
+K'upa k'upa
+P'iq'i futbol
+Ñawiñam k'ajsi
+Jach'a phutbol ch'ama
+Q'ara maki
+Suma saqta
+Ñuqa wista
+Phaxsi t'arina
+Apu mallki k'ajsi
+Ñuqa k'ajsi
+Phutbol wistayki
+T'ika ch'ama
+Ñawiñam k'ajsi t'arina
+Saqta wistayki
+Suma wistayki
+Ñuqa k'ajsi
+Phaxsi saqta
+Q'ara phutbol wistayki
+Ñuqa saqta
+P'iq'i t'arina
+Jach'a saqta wistayki
+Ñuqa wistayki
+Phaxsi k'ajsi
+Apu mallki t'arina
+Ñuqa k'ajsi
+Phutbol saqta
+T'ika wistayki
+Ñawiñam k'ajsi saqta
+Saqta wistayki
+Suma wistayki
+Ñuqa k'ajsi
+Phaxsi saqta
+Q'ara phutbol wistayki
+Ñuqa saqta
+P'iq'i t'arina
+Jach'a saqta wistayki
+Ñuqa wistayki
+Phaxsi k'ajsi
+Apu mallki t'arina
+Ñuqa k'ajsi
+Phutbol saqta
+T'ika wistayki
+Ñawiñam k'ajsi saqta
+Saqta wistayki
+Suma wistayki
+Ñuqa k'ajsi
+Phaxsi saqta
+Q'ara phutbol wistayki
+Ñuqa saqta
+P'iq'i t'arina
+Jach'a saqta wistayki
+Ñuqa wistayki
+Phaxsi k'ajsi
+Apu mallki t'arina
+Ñuqa k'ajsi
+Phutbol saqta
+T'ika wistayki
+Ñawiñam k'ajsi saqta
+Saqta wistayki
+Suma wistayki
+Ñuqa k'ajsi
+Phaxsi saqta
+Q'ara phutbol wistayki
+Ñuqa saqta
+Kimsa phusk'a
+Mä q'illay
+Jach'a k'uchu
+Thanta riqsisqa
+T'ika q'ayt'a
+Mä qallt'a
+Pacha wayruru
+Jach'a phuq'uy
+Thanta chhalla
+Wasi ruraqsi
+Suma wakichiy
+Pacha qilluy
+Ñawi t'ikarqay
+Jach'a thayruru
+Thantañäkuy
+Wasi phurqusqa
+Suma wakit'ay
+Pacha phusqay
+Jach'a saqta
+Thanta ñawiñäkuy
+Wasi raphiqay
+Suma chhaskiy
+Pacha t'ikuy
+Jach'a pampakuy
+Thanta phalluy
+Wasiñäkuy
+Suma khuyay
+Pacha khuyay
+Jach'a wakichiy
+Thanta yachay
+Wasi khuchuy
+Suma thakhiy
+Pacha wakaniy
+Jach'a yuyay
+Thanta jisk'ay
+Wasi yapay
+Suma ñawiñäkuy
+Pacha ñak'ay
+Jach'a phawaray
+Thanta sulluy
+Wasi kusisqa
+Suma kusisqa
+Pacha thakhiy
+Jach'a wakichiy
+Thanta phurqusqa
+Wasi ñawiñäkuy
+Suma yapay
+Pacha wakay
+Jach'a t'ikarqay
+Thanta saqta
+Wasi khuyay
+Suma chhaskiy
+Pacha phusqay
+Jach'a pampakuy
+Thanta riqsisqa
+Wasi phalluy
+Suma wakit'ay
+Pacha qilluy
+Jach'a thayruru
+Thantañäkuy
+Wasi ruraqsi
+Suma wakichiy
+Pacha khuyay
+Jach'a k'uchu
+Thanta q'ayt'a
+Wajta
+Thayacha
+Phasa
+Q'achwa
+K'ispi
+Phuru
+K'ispi phuru
+Qiwitani
+Jallpa
+Ch'uñu
+Isquray
+Kiwacha
+Phisara
+T'awqa
+Ch'oqo
+Phuru phasa
+Q'achwa k'ispi
+Ch'uñu jallpa
+Ch'arki
+Jacha phuru
+Phuru isquray
+Juch'uy phasa
+Phisara ch'uñu
+Chuño phuru
+Q'iwir phuru
+K'ispi chuño
+Jacha chuño
+Phasa ch'oqo
+Isquray phasa
+Phuru ch'oqo
+Ch'arki jallpa
+Phisara phuru
+T'awqa chuño
+Chuño k'ispi
+Q'iwir chuño
+Jacha k'ispi
+Phasa ch'uñu
+Ch'oqo phuru
+Juch'uy isquray
+Phisara chuño
+T'awqa phasa
+Chuño jallpa
+Q'iwir k'ispi
+Phasa ch'uñu
+Ch'oqo phuru
+Juch'uy isquray
+Phisara chuño
+T'awqa phasa
+Chuño jallpa
+Q'iwir k'ispi
