@@ -10,6 +10,8 @@ class PrepareDataset:
     def __init__(self, **kwargs):
         self.n_sentences = 10000  # Number of sentences to include in the dataset
         self.train_split = 0.9  # Ratio of the training data split
+        self.enc_tokenizer = None
+        self.dec_tokenizer = None
 
     # Fit a tokenizer
     def create_tokenizer(self, dataset):
@@ -50,6 +52,7 @@ class PrepareDataset:
         enc_tokenizer = self.create_tokenizer([pair[0] for pair in train])
         enc_seq_length = self.find_seq_length([pair[0] for pair in train])
         enc_vocab_size = self.find_vocab_size(enc_tokenizer, [pair[0] for pair in train])
+        self.enc_tokenizer = enc_tokenizer
 
         # Encode and pad the input sequences
         trainX = enc_tokenizer.texts_to_sequences([pair[0] for pair in train])
@@ -60,6 +63,7 @@ class PrepareDataset:
         dec_tokenizer = self.create_tokenizer([pair[1] for pair in train])
         dec_seq_length = self.find_seq_length([pair[1] for pair in train])
         dec_vocab_size = self.find_vocab_size(dec_tokenizer, [pair[1] for pair in train])
+        self.dec_tokenizer = dec_tokenizer
 
         # Encode and pad the input sequences
         trainY = dec_tokenizer.texts_to_sequences([pair[1] for pair in train])
@@ -69,16 +73,15 @@ class PrepareDataset:
         return trainX, trainY, train, enc_seq_length, dec_seq_length, enc_vocab_size, dec_vocab_size
 
 
-
 ################################# TEST ##################################
-# Prepare the training data
-dataset = PrepareDataset()
-trainX, trainY, train_orig, enc_seq_length, dec_seq_length, enc_vocab_size, dec_vocab_size = dataset('Dataset.csv', 'aymara', 'english')
+# # Prepare the training data
+# dataset = PrepareDataset()
+# trainX, trainY, train_orig, enc_seq_length, dec_seq_length, enc_vocab_size, dec_vocab_size = dataset('Dataset.csv', 'aymara', 'english')
 
-print(train_orig[0][0], '\n', trainX[0])
+# print(train_orig[0][0], '\n', trainX[0])
 
-print('Encoder sequence length:', enc_seq_length)
+# print('Encoder sequence length:', enc_seq_length)
 
-print(train_orig[0][1], '\n', trainY[0])
+# print(train_orig[0][1], '\n', trainY[0])
 
-print('Decoder sequence length:', dec_seq_length)
+# print('Decoder sequence length:', dec_seq_length)
