@@ -3,6 +3,7 @@ from tensorflow import convert_to_tensor
 from tensorflow.keras.layers import TextVectorization, Embedding, Layer
 import numpy as np
 import matplotlib.pyplot as plt
+import csv
 
 class PositionEmbeddingFixedWeights(Layer):
     def __init__(self, sequence_length, vocab_size, output_dim, **kwargs):
@@ -69,14 +70,31 @@ embedding_layer = PositionEmbeddingFixedWeights(
 embedded_output = embedding_layer(vectorized_words)
 print("Final output: ", embedded_output)
 
-# Visualization code
-fig = plt.figure(figsize=(15, 5))
-title = ["Sentence 1", "Sentence 2"]
-for i in range(2):
-    ax = plt.subplot(1, 2, 1 + i)
-    matrix = tf.reshape(embedded_output[i, :, :], (output_sequence_length, output_length))
-    cax = ax.matshow(matrix)
-    plt.gcf().colorbar(cax)
-    plt.title(title[i], y=1.2)
-fig.suptitle("Embedded Output")
-plt.show()
+# # Visualization code
+# fig = plt.figure(figsize=(15, 5))
+# title = ["Sentence 1", "Sentence 2"]
+# for i in range(2):
+#     ax = plt.subplot(1, 2, 1 + i)
+#     matrix = tf.reshape(embedded_output[i, :, :], (output_sequence_length, output_length))
+#     cax = ax.matshow(matrix)
+#     plt.gcf().colorbar(cax)
+#     plt.title(title[i], y=1.2)
+# fig.suptitle("Embedded Output")
+# plt.show()
+
+# Create the TextVectorization layer
+vectorize_layer = TextVectorization(
+    output_sequence_length=output_sequence_length,
+    max_tokens=vocab_size
+)
+
+# Train the layer to create a dictionary
+vectorize_layer.adapt(sentence_data)
+
+# Save the vocabulary as a CSV file
+vocabulary = vectorize_layer.get_vocabulary()
+with open('vocabulary.csv', 'w', newline='') as f:
+    writer = csv.writer(f)
+    writer.writerow(vocabulary)
+
+print("Vocabulary: ", vocabulary)
