@@ -1,3 +1,6 @@
+import csv
+import numpy as np
+import tensorflow as tf
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.optimizers.schedules import LearningRateSchedule
 from tensorflow.keras.metrics import Mean
@@ -6,8 +9,7 @@ from keras.losses import sparse_categorical_crossentropy
 from model import TransformerModel
 from prepare_dataset import PrepareDataset
 from time import time
-import tensorflow as tf
-import matplotlib.pyplot as plt
+from keras.preprocessing.text import tokenizer_from_json
 
 # Define the model parameters
 h = 8  # Number of self-attention heads
@@ -18,16 +20,12 @@ d_ff = 2048  # Dimensionality of the inner fully connected layer
 n = 6  # Number of layers in the encoder stack
 
 # Define the training parameters
-epochs = 10
+epochs = 50
 batch_size = 64
 beta_1 = 0.9
 beta_2 = 0.98
 epsilon = 1e-9
 dropout_rate = 0.1
-
-# Listas para almacenar los valores de pérdida y precisión
-loss_values = []
-accuracy_values = []
 
 # Implementing a learning rate scheduler
 class LRScheduler(LearningRateSchedule):
@@ -48,11 +46,19 @@ optimizer = Adam(LRScheduler(d_model, warmup_steps=4000), beta_1, beta_2, epsilo
 
 # Prepare the training data
 dataset = PrepareDataset()
-trainX, trainY, train_orig, enc_seq_length, dec_seq_length, enc_vocab_size, dec_vocab_size = dataset('Dataset.csv', 'aymara', 'english')
+trainX, trainY, train_orig, enc_seq_length, dec_seq_length, enc_vocab_size, dec_vocab_size = dataset('Dataset.csv', 'english', 'aymara' )
 
 # Prepare the dataset batches
 train_dataset = data.Dataset.from_tensor_slices((trainX, trainY))
 train_dataset = train_dataset.batch(batch_size)
+
+
+# Convert sequence to text
+def convert_sequence_to_text(sequence, tokenizer):
+    texts = tokenizer.sequences_to_texts([sequence.numpy().tolist()])
+    text = texts[0] if len(texts) > 0 else ""
+    return text
+
 
 # Create model
 training_model = TransformerModel(enc_vocab_size, dec_vocab_size, enc_seq_length, dec_seq_length, h, d_k, d_v, d_model, d_ff, n, dropout_rate)
@@ -95,6 +101,7 @@ def train_step(encoder_input, decoder_input, decoder_output):
 
 # Training loop
 start_time = time()
+training_outputs = []  # List to store training predictions
 
 for epoch in range(epochs):
     train_loss.reset_states()
@@ -104,7 +111,8 @@ for epoch in range(epochs):
     print_time = time()
 
     for step, (train_batchX, train_batchY) in enumerate(train_dataset):
-        
+        if step >= 100:
+            break
 
         encoder_input = train_batchX[:, 1:]
         decoder_input = train_batchY[:, :-1]
@@ -114,10 +122,9 @@ for epoch in range(epochs):
 
         print(f'Epoch {epoch + 1} Step {step} Loss {train_loss.result():.4f} Accuracy {train_accuracy.result():.4f}')
 
-        # Store loss and accuracy values for each iteration
-        loss_values.append(train_loss.result())
-        accuracy_values.append(train_accuracy.result())
-        
+        prediction = training_model(encoder_input, decoder_input, training=False)
+        training_outputs.append(prediction.numpy())  # Save the generated predictions during training
+
     print("Epoch %d: Training Loss %.4f, Training Accuracy %.4f" % (epoch + 1, train_loss.result(), train_accuracy.result()))
     print("Time taken for epoch %d: %.2fs" % (epoch + 1, time() - print_time))
 
@@ -127,24 +134,40 @@ for epoch in range(epochs):
 
 print("Total time taken: %.2fs" % (time() - start_time))
 
+# Reshape predictions for saving as CSV
+training_outputs_reshaped = np.concatenate(training_outputs, axis=0)
 
-# Graficar la curva de aprendizaje (MSE vs. Iteración)
-plt.plot(loss_values)
-plt.xlabel('Iteración')
-plt.ylabel('MSE')
-plt.title('Curva de aprendizaje')
-plt.show()
+# Save predictions as a CSV file
+with open('training_outputs.csv', 'w', newline='') as f:
+    writer = csv.writer(f)
+    writer.writerows(training_outputs_reshaped)
 
-# Graficar la pérdida vs. iteración
-plt.plot(loss_values)
-plt.xlabel('Iteración')
-plt.ylabel('Pérdida')
-plt.title('Pérdida vs. Iteración')
-plt.show()
+# Set the tokenizer for the decoder
+enc_tokenizer = dataset.enc_tokenizer
+dec_tokenizer = dataset.dec_tokenizer
 
-# Graficar la precisión vs. iteración
-plt.plot(accuracy_values)
-plt.xlabel('Iteración')
-plt.ylabel('Precisión')
-plt.title('Precisión vs. Iteración')
-plt.show()
+for i in range(len(trainX)):
+    # Convert input sequence to text
+    input_text = convert_sequence_to_text(trainX[i], enc_tokenizer)
+    
+    # Convert target sequence to text
+    target_text = convert_sequence_to_text(trainY[i], dec_tokenizer)
+    
+    print("Input:", input_text)
+    print("Translation:", target_text)
+    print()
+
+
+# Open a file for writing
+with open('output_translations.txt', 'w') as f:
+    # Iterate over the sequences and their translations
+    for i in range(len(trainX)):
+        # Convert input sequence to text
+        input_text = convert_sequence_to_text(trainX[i], dataset.enc_tokenizer)
+        
+        # Convert target sequence to text
+        target_text = convert_sequence_to_text(trainY[i], dataset.dec_tokenizer)
+        
+        # Write the input and translation to the file
+        f.write(f"Input: {input_text}\n")
+        f.write(f"Translation: {target_text}\n\n")
